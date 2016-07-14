@@ -1,0 +1,6 @@
+[submodule "multibuild"]
+	path = multibuild
+	url = https://github.com/matthew-brett/multibuild.git
+[submodule "gensim"]
+	path = gensim
+	url = https://github.com/RaRe-Technologies/gensim.git
