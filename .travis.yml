@@ -1,29 +1,25 @@
 env:
-global:
-    - REPO_DIR=gensim
-    # Commit from your-project that you want to build
-    - BUILD_COMMIT=v0.1.0
-    # pip dependencies to _build_ your project
-    - BUILD_DEPENDS="Cython numpy"
-    # pip dependencies to _test_ your project.  Include any dependencies
-    # that you need, that are also specified in BUILD_DEPENDS, this will be
-    # a separate install.
-    - TEST_DEPENDS="numpy scipy pytest"
-    - PLAT=x86_64
-    - UNICODE_WIDTH=32
-    - WHEELHOUSE_UPLOADER_USERNAME=travis-worker
-    # Following generated with
-    # travis encrypt -r your-org/your-project-wheels WHEELHOUSE_UPLOADER_SECRET=<the api key>
-    # This is for Rackspace uploads.  Contact the scikit-learn team for
-    # permission (and the API key) to upload to the Rackspace account used
-    # here, or use your own account.
-    - secure:
-        "lZW7U67gVsceiI+Ofi2n+X3BRyou8D/ul5BuJK0OBtt4aiccKzrUAb8vraHy6ED0l1t/j3GWfrg8jaP9G9BRGIfoDQROJ5w+BZ/pTL0p+OnJrqZkNNiG82qvEOSmlVrE+afl2YMeLKDou+uX1wuXp6xYaN9W/lJJW0qskS6D/aiPY7KwagFWv+QsUF07SpomMBiZ/EE4FsMJBhg9q7sUg/tG4mbiTgZY2jGx+R2u5ktq3zPr6MIzIqz+7vswMR/BTg2WJTDvxQTMpWGYihi3vOxX9ty0vIUKti0zHIcj6B8RYgiDoAC6P2OUtk2J1qHiyvAooi9Vm+WkPnxQqF+8EOXkbajvsuniwPwenmy6xYh7fmNxs4huxFb3H8FYC6qI1256cMXd9CssFCroeLuQoUa7sn1X+cmb2IjrE1mOyboIF6iQ5M31xcQBUzIuauONnx4xz58ASovYDfHc1RkhatBtaW2nKhjiti6uvs8kVgok/dzoGOExRblbN1IjpjmCvhDQh6WQryMupoUmjJWjIsgs1MfaMaT7jW8AM1as5beHoEJiB445KJTBIb61BHxyfXcneuUJrRmlM7F8Tw56Gpilwl7hE/ufd3teabJDdxV0J18r4Rq/HI8N5vh4YFvV3h+p4drEnZYPHV3narMj8nGnud65qXAFfp0e25cLY3c="
-  region: ORD
-  container: wheels
-  skip_cleanup: true
-
-
+    global:
+        - REPO_DIR=gensim
+        # Commit from your-project that you want to build
+        - BUILD_COMMIT=v0.1.0
+        # pip dependencies to _build_ your project
+        - BUILD_DEPENDS="Cython numpy"
+        # pip dependencies to _test_ your project.  Include any dependencies
+        # that you need, that are also specified in BUILD_DEPENDS, this will be
+        # a separate install.
+        - TEST_DEPENDS="numpy scipy pytest"
+        - PLAT=x86_64
+        - UNICODE_WIDTH=32
+        - WHEELHOUSE_UPLOADER_USERNAME=travis-worker
+        # Following generated with
+        # travis encrypt -r your-org/your-project-wheels WHEELHOUSE_UPLOADER_SECRET=<the api key>
+        # This is for Rackspace uploads.  Contact the scikit-learn team for
+        # permission (and the API key) to upload to the Rackspace account used
+        # here, or use your own account.
+        - secure:
+            "lZW7U67gVsceiI+Ofi2n+X3BRyou8D/ul5BuJK0OBtt4aiccKzrUAb8vraHy6ED0l1t/j3GWfrg8jaP9G9BRGIfoDQROJ5w+BZ/pTL0p+OnJrqZkNNiG82qvEOSmlVrE+afl2YMeLKDou+uX1wuXp6xYaN9W/lJJW0qskS6D/aiPY7KwagFWv+QsUF07SpomMBiZ/EE4FsMJBhg9q7sUg/tG4mbiTgZY2jGx+R2u5ktq3zPr6MIzIqz+7vswMR/BTg2WJTDvxQTMpWGYihi3vOxX9ty0vIUKti0zHIcj6B8RYgiDoAC6P2OUtk2J1qHiyvAooi9Vm+WkPnxQqF+8EOXkbajvsuniwPwenmy6xYh7fmNxs4huxFb3H8FYC6qI1256cMXd9CssFCroeLuQoUa7sn1X+cmb2IjrE1mOyboIF6iQ5M31xcQBUzIuauONnx4xz58ASovYDfHc1RkhatBtaW2nKhjiti6uvs8kVgok/dzoGOExRblbN1IjpjmCvhDQh6WQryMupoUmjJWjIsgs1MfaMaT7jW8AM1as5beHoEJiB445KJTBIb61BHxyfXcneuUJrRmlM7F8Tw56Gpilwl7hE/ufd3teabJDdxV0J18r4Rq/HI8N5vh4YFvV3h+p4drEnZYPHV3narMj8nGnud65qXAFfp0e25cLY3c="
+            
 language: python
 # The travis Python version is unrelated to the version we build and test
 # with.  This is set with the MB_PYTHON_VERSION variable.
