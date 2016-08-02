@@ -11,5 +11,6 @@ function run_tests {
     # Runs tests on installed distribution from an empty directory
     python --version
     pip install gensim
-    python -c 'import sys; import gensim; sys.exit(gensim.test())'
+    pip install nose
+    nosetests --exe -v gensim
 }
